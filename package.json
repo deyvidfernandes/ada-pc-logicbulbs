@@ -1,0 +1,24 @@
+{
+  "name": "ada-logicbulb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deyvid Fernandes",
+  "license": "MIT",
+  "dependencies": {
+    "@dotlottie/player-component": "^2.7.0",
+    "@parcel/config-default": "^2.10.0",
+    "parcel": "^2.10.0",
+    "reset-css": "^5.0.2"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  }
+}
