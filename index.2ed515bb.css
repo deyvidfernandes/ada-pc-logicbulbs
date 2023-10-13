@@ -1,0 +1,117 @@
+#root {
+  --swicth-w: 50px;
+  --swicth-h: 100px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+dotlottie-player {
+  transform: rotateZ(180deg);
+}
+
+*, :before, :after {
+  transition: all .2s ease-in-out;
+}
+
+html, body {
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+  font-weight: 200;
+}
+
+#light-switch2 {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#light-switch2:checked ~ #background {
+  background-color: #ebdbac;
+}
+
+#light-switch2:checked ~ #light-switch-label2 .switch {
+  box-shadow: 0 10px 10px -5px #e9dbb0, 0 0 0 1px #0000001a, 0 0 0 4px #fff4d3, 0 0 0 5px #0000001a;
+}
+
+#light-switch2:checked ~ #light-switch-label2 .switch:before {
+  height: calc(var(--swicth-h) / 2);
+  line-height: calc(var(--swicth-h) / 2);
+  color: #64bf60;
+  text-shadow: 0 0 3px #38ff2e;
+  background: #fff4d3;
+  top: 0;
+}
+
+#light-switch2:checked ~ #light-switch-label2 .switch:after {
+  height: calc(var(--swicth-h) / 2 - 5px);
+  line-height: calc(var(--swicth-h) / 2 - 5px);
+  color: #d7bf95;
+  text-shadow: 0 0 #0000;
+  background: #fffaea;
+  bottom: 5px;
+  box-shadow: 0 5px #d0b57b;
+}
+
+#light-switch-label2 {
+  z-index: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: block;
+}
+
+#light-switch-label2 .switch {
+  cursor: pointer;
+  height: var(--swicth-h);
+  width: var(--swicth-w);
+  background: #fffaea;
+  border-radius: 5px;
+  position: relative;
+  top: -8px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px -5px #e9dbb000, 0 0 0 1px #0000001a, 0 0 0 4px #fff4d3, 0 0 0 5px #0000001a;
+}
+
+#light-switch-label2 .switch:before {
+  content: "ON";
+  height: calc(var(--swicth-h) / 2 - 5px);
+  text-align: center;
+  line-height: calc(var(--swicth-h) / 2 - 5px);
+  width: var(--swicth-w);
+  color: #bfa371;
+  background: #efe0b1;
+  border-radius: 5px 5px 0 0;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+#light-switch-label2 .switch:after {
+  content: "OFF";
+  height: calc(var(--swicth-h) / 2);
+  text-align: center;
+  line-height: calc(var(--swicth-h) / 2);
+  width: var(--swicth-w);
+  color: #a4441a;
+  text-shadow: 0 0 3px #ff4e00;
+  background: #fff4d3;
+  border-radius: 0 0 5px 5px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#light-switch-label2 #background {
+  background-color: #132436;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=index.2ed515bb.css.map */
